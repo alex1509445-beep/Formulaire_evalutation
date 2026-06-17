@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Création de compte sécurisé</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#f0d3f7] min-h-screen flex items-center justify-center p-4">
+
+    <div class="bg-[#f3daf9] border-2 border-[#e6bbf2] rounded-2xl p-8 w-full max-w-2xl shadow-xl">
+        
+        <h1 class="text-[#8b1ca8] text-center font-black uppercase text-2xl tracking-wide mb-8" >
+            Création de compte sécurisé
+        </h1>
+
+        <form class="space-y-5">
+            
+            <div>
+                <label class="block text-[#4a154b] font-medium mb-1.5" for="nom">
+                    Nom complet*
+                </label>
+                <input 
+                    type="text" 
+                    id="nom" 
+                    placeholder="Sacha Vodka"
+                    class="w-full bg-[#f6e6fc] border border-[#e2cced] rounded-lg px-4 py-3 text-gray-700 focus:outline-none focus:border-[#8b1ca8]"
+                    required
+                >
+            </div>
+
+            <div>
+                <label class="block text-[#4a154b] font-medium mb-1.5" for="email">
+                    Email*
+                </label>
+                <input 
+                    type="email" 
+                    id="email" 
+                    placeholder="sacha.vodka@gmail.com"
+                    class="w-full bg-[#f6e6fc] border border-[#e2cced] rounded-lg px-4 py-3 text-gray-700 focus:outline-none focus:border-[#8b1ca8]"
+                    required
+                >
+            </div>
+
+            <div>
+                <label class="block text-[#4a154b] font-medium mb-1.5" for="password">
+                    Mot de passe*
+                </label>
+                <input 
+                    type="password" 
+                    id="password" 
+                    placeholder="password123" 
+                    class="w-full bg-[#f6e6fc] border border-[#e2cced] rounded-lg px-4 py-3 text-gray-700 focus:outline-none focus:border-[#8b1ca8]"
+                    required
+                >
+                <p class="text-[#a570b5] text-xs mt-1.5 font-medium">
+                    8 caractères minimum avec majuscule, minuscule, chiffre et caractère spécial
+                </p>
+            </div>
+
+            <div>
+                <label class="block text-[#4a154b] font-medium mb-1.5" for="security-code">
+                    Code de sécurité*
+                </label>
+                <input 
+                    type="text" 
+                    id="security-code" 
+                    placeholder="ABC-123-XYZ"
+                    class="w-full bg-[#f6e6fc] border border-[#e2cced] rounded-lg px-4 py-3 text-gray-700 focus:outline-none focus:border-[#8b1ca8]"
+                    required
+                >
+                <p class="text-[#a570b5] text-xs mt-1.5 font-medium">
+                    Format requis : 3 lettres - 3 chiffres - 3 lettres (ex: ABC-123-XYZ)
+                </p>
+            </div>
+
+            <div class="flex items-center pt-2">
+                <input 
+                    type="checkbox" 
+                    id="conditions" 
+                    class="w-4 h-4 text-[#8b1ca8] bg-[#f6e6fc] border-[#e2cced] rounded focus:ring-[#8b1ca8]"
+                    required
+                >
+                <label class="ml-2 text-[#4a154b] text-sm font-medium" for="conditions">
+                    J'accepte les conditions d'utilisation*
+                </label>
+            </div>
+
+            <div class="pt-4">
+                <button 
+                    type="submit" 
+                    class="w-full bg-[#9c27b0] hover:bg-[#831f94] text-white font-medium py-3 px-4 rounded-xl transition duration-200"
+                >
+                    Créer mon compte
+                </button>
+            </div>
+
+        </form>
+    </div>
+<script src="js/script.js"></script>
+</body>
+</html>
